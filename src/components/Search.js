@@ -27,7 +27,7 @@ export default function Search({ setData, setLoading }) {
     setLoading(true);
     axios
       .get(
-        "http://openlibrary.org/search.json?limit=10&q=" + values.queryTerm,
+        "https://openlibrary.org/search.json?limit=10&q=" + values.queryTerm,
         { timeout: 5000 }
       ) //
       .then((data) => {
